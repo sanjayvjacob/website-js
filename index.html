@@ -13,19 +13,35 @@
 </head>
 <body>
   <header>
-    <nav>
+    <nav id="desktop-nav">
       <div class="logo">Sanjay Jacob</div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#blog">Blog</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="burger">
-        <p class="line1"></p>
-        <p class="line2"></p>
-        <p class="line3"></p>
+      <div>
+        <!--desktop navigation-->
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sanjay Jacob</div>
+      <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <!--mobile navigation-->
+      <div class="menu-links">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#blog" onclick="toggleMenu()">Blog</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
     </nav>
   </header>
   <main>
@@ -37,12 +53,12 @@
       <p class="content-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur officia fugit atque, adipisci excepturi, commodi quas at, quos esse reiciendis nihil perspiciatis! Nemo, voluptas laudantium! Temporibus quisquam dicta vero dolorem.</p> <br><br>
       <p class="content-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur officia fugit atque, adipisci excepturi, commodi quas at, quos esse reiciendis nihil perspiciatis! Nemo, voluptas laudantium! Temporibus quisquam dicta vero dolorem.</p>
     </section>
-    <footer>
-      <div class="footer">
-        <p>copyright 2024 Sanjay Jacob . All rights reserved</p>
-      </div>
-    </footer>
   </main>
+  <footer>
+    <div class="footer">
+      <p>&copy; <span id="currentYear"></span> Sanjay Jacob. All rights reserved.</p>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
